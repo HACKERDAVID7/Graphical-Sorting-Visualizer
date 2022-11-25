@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Graphical Sorting Visualizer</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+
+    <!-- Option 1: Include in HTML -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg p-1">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Graphical Sorting Visualizer</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <div class="row">
+                <div class="col gap-2 d-sm-flex" id="newArray">
+                  <button type="button" class="btn newArray">New Array</button>
+                </div>
+                <div class="col" id="input">
+                  <span id="size"
+                    >Size
+                    <input
+                      id="arr_sz"
+                      type="range"
+                      min="5"
+                      max="100"
+                      step="1"
+                      value="60"
+                    />
+                  </span>
+                  <span id="speed"
+                    >Speed
+                    <input
+                      id="speed_input"
+                      type="range"
+                      min="20"
+                      max="300"
+                      stepDown="10"
+                      value="60"
+                    />
+                  </span>
+                </div>
+                <div class="col gap-3 d-sm-flex justify-content-end" ;>
+                  <button type="button" class="btn bubbleSort">
+                    Bubble Sort
+                  </button>
+                  <button type="button" class="btn selectionSort">
+                    Selection Sort
+                  </button>
+                  <button type="button" class="btn insertionSort">
+                    Insertion Sort
+                  </button>
+                  <button type="button" class="btn quickSort">
+                    Quick Sort
+                  </button>
+                  <button type="button" class="btn mergeSort">
+                    Merge Sort
+                  </button>
+
+                  <button
+                    type="button"
+                    class="btn Reset active"
+                    onclick="window.location.reload()"
+                  >
+                    Reset
+                  </button>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="main p-3" style="background: whitesmoke" ;>
+        <div id="bars" class="flex-container"></div>
+      </div>
+
+      <script src="Javascript/sorting.js"></script>
+      <script src="Javascript/bubble.js"></script>
+      <script src="Javascript/insertion.js"></script>
+      <script src="Javascript/merge.js"></script>
+      <script src="Javascript/quick.js"></script>
+      <script src="Javascript/selection.js"></script>
+    </main>
+
+    <footer>
+      <div class="section bg-dark text-light p-2">
+        <div class="icons text-center ">
+         
+          <!-- Twitter -->
+          <a class="btn btn-link btn-floating btn-lg fs-2 m-1" href="https://twitter.com/its_sumit20?t=VE0LCO9WCWs14zRfacOoqw&s=08" target="_blank">
+            <i class="bi bi-twitter"></i>
+          </a>
+
+          <!-- GitHub -->
+          <a class="btn btn-link btn-floating btn-lg fs-2 m-1" href="https://github.com/HACKERDAVID7" target="_blank">
+            <i class="bi bi-github"></i>
+          </a>
+
+          <!-- Instagram -->
+          <a class="btn btn-link btn-floating btn-lg fs-2 m-1" href="https://www.instagram.com/its_sum.it/" target="_blank">
+            <i class="bi bi-instagram"></i>
+          </a>
+
+          <!-- LinkedIn -->
+          <a class="btn btn-link btn-floating btn-lg fs-2 m-1" href="https://www.linkedin.com/in/sumit-kumar-48aaba202/" target="_blank">
+            <i class="bi bi-linkedin"></i>
+          </a>
+
+
+
+
+        </div>
+
+
+        
+
+        <div class="copyright text-center m-1">
+            <strong for="Copyright">
+              Made with ♥ by&nbsp;<a style="color:cornsilk" href="https://github.com/HACKERDAVID7">Sumit Kumar</a>
+              </strong>
+            </label>
+        </div>
+      </div>
+    </footer>
+
+    
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
